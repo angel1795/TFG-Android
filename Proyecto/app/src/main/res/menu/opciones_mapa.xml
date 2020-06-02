@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+    <item android:id="@+id/normal_map"
+        android:title="@string/normal"
+        app:showAsAction="never"/>
+    <item android:id="@+id/hibrido_map"
+
+    android:title="@string/h_brido"
+    app:showAsAction="never"/>
+    <item android:id="@+id/satelite_map"
+        android:title="@string/sat_lite"
+        app:showAsAction="never"/>
+    <item android:id="@+id/terreno_map"
+        android:title="@string/terreno"
+        app:showAsAction="never"/>
+</menu>

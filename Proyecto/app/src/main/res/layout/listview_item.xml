@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="74dp"
+    android:background="@color/colorbg2"
+    android:orientation="vertical"
+    android:paddingRight="15dp"
+    android:paddingLeft="15dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#B0A0CC"
+        app:cardCornerRadius="5sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtBillnombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:textColor="@color/colorMenus"
+                android:textSize="20sp"
+                android:layout_marginRight="5dp"/>
+
+            <TextView
+                android:id="@+id/txtBillfecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.15"
+                android:gravity="center"
+                android:textColor="@color/colorMenus"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                android:layout_marginRight="5dp"/>
+
+            <TextView
+                android:id="@+id/txtBillpagado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                android:textColor="@color/colorMenus"
+
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

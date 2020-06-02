@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/itInfo"
+        android:onClick="showInfo"
+        android:title="@string/informaci_n_de_la_app" />
+    <item
+        android:id="@+id/itSalir"
+        android:onClick="salirApp"
+        android:title="@string/salir" />
+</menu>

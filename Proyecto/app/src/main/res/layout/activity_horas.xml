@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorbg">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbg"
+    tools:context=".HorasActivity">
+
+    <Spinner
+        android:id="@+id/spnhoras"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+android:gravity="center"
+
+        />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+
+        android:text="@string/horarios"
+        android:textColor="@color/colorMenus"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableHoras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="26dp"
+        android:stretchColumns="*"
+        android:gravity="center"
+        android:backgroundTint="@color/colortabla2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnhoras"
+
+
+        >
+
+        <TableRow
+            android:id="@+id/tabR1"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colortabla"
+            android:baselineAligned="false"
+            android:divider="@color/colorAccent">
+
+            <TextView
+                android:id="@+id/Lunes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elegantTextHeight="true"
+                android:gravity="center_horizontal"
+                android:shadowColor="@color/colorMenus"
+                android:text="@string/lunes"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+                android:textColor="@color/colorMenustab"
+                android:textSize="14sp"
+                android:textStyle="normal|bold|italic" />
+
+            <TextView
+                android:id="@+id/Martes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elegantTextHeight="true"
+                android:gravity="center_horizontal"
+                android:text="@string/martes"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+                android:textColor="@color/colorMenustab"
+                android:textSize="14sp"
+                android:textStyle="normal|bold|italic" />
+
+            <TextView
+                android:id="@+id/Mierco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elegantTextHeight="true"
+                android:gravity="center_horizontal"
+                android:text="@string/mi_rcoles"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+                android:textColor="@color/colorMenustab"
+                android:textSize="14sp"
+                android:textStyle="normal|bold|italic" />
+
+            <TextView
+                android:id="@+id/Jueves"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elegantTextHeight="true"
+                android:gravity="center_horizontal"
+                android:text="@string/jueves"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+                android:textColor="@color/colorMenustab"
+                android:textSize="14sp"
+                android:textStyle="normal|bold|italic" />
+
+            <TextView
+                android:id="@+id/Viernes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elegantTextHeight="true"
+                android:gravity="center_horizontal"
+                android:text="@string/viernes"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+                android:textColor="@color/colorMenustab"
+                android:textSize="14sp"
+                android:textStyle="normal|bold|italic" />
+
+            <TextView
+                android:id="@+id/Sabado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elegantTextHeight="true"
+                android:gravity="center_horizontal"
+                android:text="@string/s_bado"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+                android:textColor="@color/colorMenustab"
+                android:textSize="14sp"
+                android:textStyle="normal|bold|italic" />
+
+            <TextView
+                android:id="@+id/Domingo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elegantTextHeight="true"
+                android:gravity="center_horizontal"
+                android:text="@string/domingo"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+                android:textColor="@color/colorMenustab"
+                android:textSize="14sp"
+                android:textStyle="normal|bold|italic" />
+        </TableRow>
+
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
