@@ -1,0 +1,30 @@
+{% block title %}Factura{% endblock %}
+
+{% block content %}
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th>Número</th>
+            <th>Fecha de emisión</th>
+            <th>Nombre del cliente</th>
+            <th>Dirección del cliente</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                {{ resultado.num }}          
+            </td>
+            <td>
+                {{ resultado.fecha_emision }} 
+            </td>
+            <td> 
+                {{ resultado.cliente_nombre }} 
+            </td>
+            <td> 
+                {{ resultado.cliente_direccion }} 
+            </td>
+        </tr>
+    </tbody>
+</table>
+{% endblock content %}

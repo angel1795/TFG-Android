@@ -1,0 +1,55 @@
+{% block title %}Facturas con sus lineas correspondientes{% endblock %}
+
+
+<h1 class="title">Facturas</h1>
+{% for t in f_result %}
+<table class="table" border="solid" >
+    <thead>
+        <tr>
+            <th>Número</th>
+            <th>Fecha de emisión</th>
+            <th>Nombre del cliente</th>
+            <th>Producto</th>
+            <th>Precio unitario</th>
+            <th>Unidades</th>
+            <th>Precio real</th>
+            <th>Precio total</th>
+        </tr>
+        <tr>
+            <td>{{t.num}}</td>
+            <td>{{t.fecha_emision}}</td>
+            <td>{{t.cliente_nombre}}</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <!--A ver si funciona el rowspan de esa manera-->
+                
+            
+                <td>{{total}}</td>
+        </tr>
+    </thead>
+    {% for g in t.lineas.all %}
+    <tbody>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                {{ g.nombre_producto }}
+            </td>
+            <td>
+                {{ g.precio_unitario }}
+            </td>
+            <td>
+                {{ g.unidades }}
+            </td>
+            <td>
+                {{ g.precio_real }}
+            </td>
+          
+        </tr>
+        {% endfor %}
+    </tbody>
+    {% endfor %}
+</table>
